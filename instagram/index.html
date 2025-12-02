@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 passos para o Sushi</title>
+ <link rel="stylesheet" href="style.css?v=30">
+</head>
+
+<!-- HERO -->
+<body>
+ <section class="hero-video">
+  <video autoplay muted loop playsinline preload="auto" class="bg-video">
+      <source src="./FOTOS/aula-1.mp4" type="video/mp4">
+  </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+      <h1>13 passos para o Sushi!</h1>
+      <p>Aprenda do zero e economize muitooo em delivery.</p>
+
+      <a href="#" class="cta">Quero aprender agora!</a>
+
+  
+<!-- CONTADOR -->
+      <div class="countdown-wrap">
+        <div class="info">
+          <h3>Lançamento...</h3>
+          <p class="small-note">
+            <strong>13 de dezembro de 2025 — 13:00</strong>
+          </p>
+
+          <div class="timer" id="timer">
+            <div class="time-card">
+              <div class="num" id="days">00</div>
+              <span class="label">Dias</span>
+            </div>
+            <div class="time-card">
+              <div class="num" id="hours">00</div>
+              <span class="label">Horas</span>
+            </div>
+            <div class="time-card">
+              <div class="num" id="minutes">00</div>
+              <span class="label">Minutos</span>
+            </div>
+            <div class="time-card">
+              <div class="num" id="seconds">00</div>
+              <span class="label">Segundos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+
+<!-- BENEFÍCIOS -->
+  <section class="beneficios netflix-section">
+    <h2>O que você vai conquistar!</h2>
+
+    <div class="carousel-container">
+      <button class="arrow left">❮</button>
+
+      <div class="carousel">
+        <div class="benef-card"><span class="num">1º</span><div class="text">Descobrir que fazer sushi é muito mais simples do que parece.</div></div>
+        <div class="benef-card"><span class="num">2º</span><div class="text">Perder o medo de errar e começar com confiança.</div></div>
+        <div class="benef-card"><span class="num">3º</span><div class="text">Transformar curiosidade em habilidade real.</div></div>
+        <div class="benef-card"><span class="num">4º</span><div class="text">Aprendendo sem complicação.</div></div>
+        <div class="benef-card"><span class="num">5º</span><div class="text">Compreender do zero as técnicas essenciais do sushi.</div></div>
+        <div class="benef-card"><span class="num">6º</span><div class="text">Aprender truques que só quem trabalha na área conhece.</div></div>
+        <div class="benef-card"><span class="num">7º</span><div class="text">Nunca mais depender de vídeos soltos e confusos.</div></div>
+        <div class="benef-card"><span class="num">8º</span><div class="text">Perceber que você é capaz de muito mais do que imagina.</div></div>
+        <div class="benef-card"><span class="num">9º</span><div class="text">Se surpreender com a própria evolução.</div></div>
+        <div class="benef-card"><span class="num">10º</span><div class="text">Sentir o orgulho de preparar algo do zero.</div></div>
+        <div class="benef-card"><span class="num">11º</span><div class="text">Ver que o sushi feito por você pode ser melhor que delivery.</div></div>
+        <div class="benef-card"><span class="num">12º</span><div class="text">Transformar o aprendizado em momentos únicos.</div></div>
+        <div class="benef-card"><span class="num">13º</span><div class="text">Economizar de verdade em delivery.</div></div>
+      </div>
+
+      <button class="arrow right">❯</button>
+    </div>
+  </section>
+
+
+<!-- JS DO CARROSSEL -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.querySelector(".carousel");
+      const btnLeft = document.querySelector(".arrow.left");
+      const btnRight = document.querySelector(".arrow.right");
+
+      if (!carousel || !btnLeft || !btnRight) return;
+
+      btnLeft.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+      });
+
+      btnRight.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+      });
+    });
+  </script>
+
+
+<!-- MÉTODO -->
+  <section class="motivo">
+    <div class="motivo-img">
+      <img src="./FOTOS/foto.png" alt="Minha foto">
+    </div>
+
+    <div class="motivo-texto">
+      <h2>Por que este método funciona?</h2>
+
+      <p>Este curso foi desenvolvido especialmente para iniciantes sem experiência ou contato com a cozinha japonesa, que desejam aprender de forma pratica, divertida, acessivel e sem gastar fortunas com delivery.</p>
+      <p>São 13 videoaulas práticas e fáceis de seguir, criadas para quem sempre teve vontade de experimentar, mas achava que fazer sushi em casa era complicado demais.</p>
+      <p>Aqui, você vai aprender tudo passo a passo, desde os ingredientes, utensiclios básicos, e claro, a montagem dos sushis mais famosos: niguiri, uramaki, hossomaki, temaki e muito mais. </p>
+    </div>
+  </section>
+
+
+<!-- TABELA -->
+  <section class="comparacao">
+    <h2 class="titulo-energia">Tentar sozinho?!</h2>
+
+    <table>
+      <tr><th>Recursos</th><th>Curso 13 Passos</th><th>YouTube</th></tr>
+      <tr><td>Sequência fácil de seguir</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Aulas em FHD</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Explicação simples para iniciantes</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Resultados imediatos</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Economia real com delivery</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Materiais complementares</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Certificado de conclusão</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Grupo no Telegram (para dúvidas)</td><td>✔</td><td>✘</td></tr>
+    </table>
+  </section>
+
+
+<!-- GARANTIA -->
+  <section class="garantia">
+    <h2>Garantia de 7 dias!</h2>
+    <p>Se você não gostar do curso, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+  </section>
+
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <h2>Fazer seu próprio sushi está a 13 passos de você!</h2>
+    <a href="#" class="cta cta-final-btn">Quero aprender agora!</a>
+  </section>
+
+ 
+  <!-- CONTADOR: COM SCRIPT BLINDADO -->
+  <script>
+    function initCountdown() {
+      const targetDate = new Date(2025, 11, 13, 13, 0, 0);
+
+      const daysEl = document.getElementById('days');
+      const hoursEl = document.getElementById('hours');
+      const minutesEl = document.getElementById('minutes');
+      const secondsEl = document.getElementById('seconds');
+
+      if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
+        setTimeout(initCountdown, 200);
+        return;
+      }
+
+      function two(n){ return String(n).padStart(2, '0'); }
+
+      function updateCountdown() {
+        const now = new Date();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          daysEl.textContent = "00";
+          hoursEl.textContent = "00";
+          minutesEl.textContent = "00";
+          secondsEl.textContent = "00";
+          clearInterval(interval);
+          return;
+        }
+
+        const total = Math.floor(diff / 1000);
+        const days = Math.floor(total / 86400);
+        const hours = Math.floor((total % 86400) / 3600);
+        const minutes = Math.floor((total % 3600) / 60);
+        const seconds = total % 60;
+
+        daysEl.textContent = two(days);
+        hoursEl.textContent = two(hours);
+        minutesEl.textContent = two(minutes);
+        secondsEl.textContent = two(seconds);
+      }
+
+      updateCountdown();
+      const interval = setInterval(updateCountdown, 1000);
+    }
+
+    document.addEventListener("DOMContentLoaded", initCountdown);
+  </script>
+
+</body>
+</html>

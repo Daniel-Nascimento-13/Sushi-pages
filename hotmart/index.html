@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 passos para o Sushi</title>
+  <link rel="stylesheet" href="style.css?v=999999">
+</head>
+ 
+
+<!-- HERO -->
+<body>
+ <section class="hero-video">
+  <video autoplay muted loop playsinline preload="auto" class="bg-video">
+      <source src="./FOTOS/aula-1.mp4" type="video/mp4">
+  </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+      <h1>13 passos para o Sushi!</h1>
+      <p>Quer ter certeza? Nosso Instagram mostra a solidez e credibilidade do nosso trabalho.</p>
+      <a href="https://www.instagram.com/danisushii/" class="cta" target="_blank">📸 Instagram</a>
+    </div>
+  </section>
+
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios netflix-section">
+    <h2>O que você vai conquistar!</h2>
+
+    <div class="carousel-container">
+
+      <button class="arrow left">❮</button>
+
+      <div class="carousel">
+        <div class="benef-card"><span class="num">1º</span><div class="text">Descobrir que fazer sushi é muito mais simples do que parece.</div></div>
+        <div class="benef-card"><span class="num">2º</span><div class="text">Perder o medo de errar e começar com confiança.</div></div>
+        <div class="benef-card"><span class="num">3º</span><div class="text">Transformar curiosidade em habilidade real.</div></div>
+        <div class="benef-card"><span class="num">4º</span><div class="text">Aprendendo sem complicação.</div></div>
+        <div class="benef-card"><span class="num">5º</span><div class="text">Compreender do zero as técnicas essenciais do sushi.</div></div>
+        <div class="benef-card"><span class="num">6º</span><div class="text">Aprender truques que só quem trabalha na área conhece.</div></div>
+        <div class="benef-card"><span class="num">7º</span><div class="text">Nunca mais depender de vídeos soltos e confusos.</div></div>
+        <div class="benef-card"><span class="num">8º</span><div class="text">Perceber que você é capaz de muito mais do que imagina.</div></div>
+        <div class="benef-card"><span class="num">9º</span><div class="text">Se surpreender com a própria evolução.</div></div>
+        <div class="benef-card"><span class="num">10º</span><div class="text">Sentir o orgulho de preparar algo do zero.</div></div>
+        <div class="benef-card"><span class="num">11º</span><div class="text">Ver que o sushi feito por você pode ser melhor que delivery.</div></div>
+        <div class="benef-card"><span class="num">12º</span><div class="text">Transformar o aprendizado em momentos únicos.</div></div>
+        <div class="benef-card"><span class="num">13º</span><div class="text">Economizar de verdade em delivery.</div></div>
+      </div>
+
+      <button class="arrow right">❯</button>
+    </div>
+  </section>
+
+    <!-- JS DO CARROSSEL -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.querySelector(".carousel");
+      const btnLeft = document.querySelector(".arrow.left");
+      const btnRight = document.querySelector(".arrow.right");
+
+      if (!carousel || !btnLeft || !btnRight) return;
+
+      btnLeft.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+      });
+
+      btnRight.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+      });
+    });
+  </script>
+  
+  <!-- MÉTODO -->
+  <section class="motivo">
+    <div class="motivo-img">
+      <img src="./FOTOS/foto.png" alt="Minha foto">
+    </div>
+
+<div class="motivo-texto">
+  <h2>Por que este método funciona?</h2>
+
+  <p>
+    Este curso foi desenvolvido especialmente para iniciantes sem experiência ou 
+    contato com a cozinha japonesa, que desejam aprender de forma prática, divertida, 
+    acessível e sem gastar fortunas com delivery.
+  </p>
+
+  <p>
+    São 13 videoaulas práticas e fáceis de seguir, criadas para quem sempre teve vontade 
+    de experimentar, mas achava que fazer sushi em casa era complicado demais.
+  </p>
+
+  <p>
+    Aqui, você vai aprender tudo passo a passo: desde os ingredientes, utensílios básicos 
+    e até a montagem dos sushis mais famosos como: nigiri, uramaki, temaki e muito mais.
+  </p>
+</div>
+
+  </section>
+
+
+  <!-- TABELA -->
+  <section class="comparacao">
+    <h2 class="titulo-energia">Tentar sozinho?!</h2>
+
+    <table>
+      <tr>
+        <th>Recursos</th>
+        <th>Curso 13 Passos</th>
+        <th>YouTube</th>
+      </tr>
+      <tr><td>Sequência fácil de seguir</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Aulas em FHD</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Explicação simples para iniciantes</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Resultados imediatos</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Economia real com delivery</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Materiais complementares</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Certificado de conclusão</td><td>✔</td><td>✘</td></tr>
+      <tr><td>Grupo no Telegram (para dúvidas)</td><td>✔</td><td>✘</td></tr>
+    </table>
+  </section>
+
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+
+    <div class="depo-grid">
+
+      <div class="depo">
+        <p>Nunca tinha feito sushi, agora faço hot toda semana!</p>
+        <div class="linha"></div>
+        <div class="estrelas">★★★★★</div>
+      </div>
+
+      <div class="depo">
+        <p>Economizei mais de R$ 300 no primeiro mês.</p>
+        <div class="linha"></div>
+        <div class="estrelas">★★★★★</div>
+      </div>
+
+      <div class="depo">
+        <p>O ebook e o menu com fotos são perfeitos.</p>
+        <div class="linha"></div>
+        <div class="estrelas">★★★★★</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GARANTIA -->
+  <section class="garantia">
+    <h2>Garantia de 7 dias!</h2>
+    <p>Se você não gostar do curso, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <h2>Siga nosso perfil e fique por dentro de todas as novidades!</h2>
+    <a href="https://www.instagram.com/danisushii/" class="cta cta-final-btn" target="_blank">📸 Instagram</a>
+  </section>
+
+</body>
+</html>
