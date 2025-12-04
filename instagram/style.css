@@ -1026,7 +1026,4 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
   flex: 0 0 12px;
 }
 
-/* Mantém o contador exatamente no mesmo lugar visual */
-.contador-fixo-pos {
-  margin-top: -40px; /* Ajuste fino caso necessário */
-}
+
