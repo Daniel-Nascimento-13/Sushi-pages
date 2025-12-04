@@ -974,7 +974,13 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
 
 /* TABLETS (≤900px) */
 @media (max-width: 900px) {
-  .hero-video { height: 75svh; }
+
+  /* FIX DO BUG DO ANDROID */
+  .hero-video {
+    height: auto;
+    min-height: 85svh;
+  }
+
   .hero-text h1 { font-size: 2.4rem; }
   .motivo { flex-direction: column; }
   .motivo-img img { width: 70%; max-width: 300px; }
