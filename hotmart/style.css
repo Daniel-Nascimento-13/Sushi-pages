@@ -119,6 +119,7 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
   color: var(--branco);
 }
 
+
 /* ESTADO DE FOCO VISÍVEL PARA NAVEGAÇÃO POR TECLADO */
 .cta:focus-visible,
 .arrow:focus-visible {
@@ -139,7 +140,7 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
 /* HERO */
 .hero-video {
   position: relative;
-  height: 85vh;
+  height: 85svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,6 +150,7 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
 
 .bg-video {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -214,6 +216,7 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
+
 
 /* ESPAÇO EXTRA NO FINAL PARA IOS NÃO "PULAR" O ÚLTIMO CARD */
 .carousel::after {
@@ -491,7 +494,7 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
 /* CTA FINAL */
 .cta-final {
   padding: 50px 20px;
-  margin-top: -80px;
+  margin-top: 0;
 }
 
 .cta-final h2 {
@@ -544,16 +547,15 @@ h1, h2, h3, h4, h5, h6, p, td, th, span {
 
 /* TELAS MUITO PEQUENAS (≤360px) */
 @media (max-width: 360px) {
-  .titulo-energia { font-size: 1.4rem; }
-  .hero-video     { height: 60vh; }
-  .hero-text h1   { font-size: 1.55rem; }
-  .hero-text p    { font-size: 0.9rem; }
-  .benef-card     { min-width: 130px; height: 180px; }
-
-  .depo-grid      { width: 95%; }
+  .titulo-energia   { font-size: 1.4rem; }
+  .hero-video       { height: 60vh; }
+  .hero-text h1     { font-size: 1.55rem; }
+  .hero-text p      { font-size: 0.9rem; }
+  .benef-card       { min-width: 130px; height: 180px; }
+  .depo-grid        { width: 95%; }
   .comparacao table { font-size: 0.78rem; }
   .comparacao th,
-  .comparacao td  { padding: 8px 6px; }
+  .comparacao td    { padding: 8px 6px; }
 }
 
 /* SMARTPHONES (≤600px) */
