@@ -9,7 +9,7 @@
   <!-- SEO -->
   <meta name="description" content="Aprenda a fazer sushi em casa com 13 videoaulas práticas para iniciantes. Nigiri, uramaki, temaki e muito mais. Economize no delivery!">
 
-  <!-- Open Graph (WhatsApp, Instagram, redes sociais) -->
+  <!-- OPEN GRAPH — WHATSAPP, INSTAGRAM, REDES SOCIAIS -->
   <meta property="og:title" content="13 Passos para o Sushi">
   <meta property="og:description" content="Aprenda a fazer sushi em casa com 13 videoaulas práticas para iniciantes. Economize no delivery!">
   <meta property="og:image" content="./FOTOS/foto.png">
@@ -21,8 +21,13 @@
 
 <body>
 
-  <!-- HERO -->
+
+  <!-- ============================================================
+       HERO — VÍDEO DE FUNDO COM TÍTULO E BOTÃO PRINCIPAL
+       O BOTÃO ROLA A PÁGINA ATÉ A SEÇÃO DE PREÇO (#CTA-FINAL)
+  ============================================================ -->
   <section class="hero-video" aria-label="Apresentação do curso">
+
     <video autoplay muted loop playsinline preload="auto" class="bg-video">
       <source src="./FOTOS/aula-1.mp4" type="video/mp4">
       Seu navegador não suporta vídeo HTML5.
@@ -33,12 +38,16 @@
     <div class="hero-text">
       <h1>13 passos para o Sushi!</h1>
       <p>Aprenda do zero e economize muitooo em delivery.</p>
-      <a href="https://go.hotmart.com/U103022625P" class="cta" target="_blank" rel="noopener noreferrer">Quero aprender agora!</a>
+      <a href="#cta-final" class="cta">Quero aprender agora!</a>
     </div>
+
   </section>
 
 
-  <!-- BENEFÍCIOS -->
+  <!-- ============================================================
+       CARROSSEL DE BENEFÍCIOS — ESTILO NETFLIX
+       MOSTRA OS 13 BENEFÍCIOS DO CURSO EM CARDS DESLIZÁVEIS
+  ============================================================ -->
   <section class="beneficios netflix-section" aria-label="Benefícios do curso">
     <h2>O que você vai conquistar!</h2>
 
@@ -66,45 +75,36 @@
   </section>
 
 
-  <!-- JS DO CARROSSEL -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const carousel = document.querySelector(".carousel");
-      const btnLeft = document.querySelector(".arrow.left");
-      const btnRight = document.querySelector(".arrow.right");
-
-      if (!carousel || !btnLeft || !btnRight) return;
-
-      btnLeft.addEventListener("click", () => {
-        carousel.scrollBy({ left: -300, behavior: "smooth" });
-      });
-
-      btnRight.addEventListener("click", () => {
-        carousel.scrollBy({ left: 300, behavior: "smooth" });
-      });
-    });
-  </script>
-
-
-  <!-- MÉTODO -->
+  <!-- ============================================================
+       MÉTODO — FOTO DA INSTRUTORA + TEXTO EXPLICATIVO
+       APRESENTA O DIFERENCIAL DO CURSO E O QUE SERÁ ENSINADO
+  ============================================================ -->
   <section class="motivo" aria-label="Por que este método funciona">
+
     <div class="motivo-img">
       <img src="./FOTOS/foto.png" alt="Foto da Dani, instrutora do curso 13 Passos para o Sushi">
     </div>
 
     <div class="motivo-texto">
       <h2>Por que este método funciona?</h2>
-
       <p>Este curso foi desenvolvido especialmente para iniciantes sem experiência ou contato com a cozinha japonesa, que desejam aprender de forma prática, divertida, acessível e sem gastar fortunas com delivery.</p>
       <p>São 13 videoaulas práticas e fáceis de seguir, criadas para quem sempre teve vontade de experimentar, mas achava que fazer sushi em casa era complicado demais.</p>
       <p>Aqui, você vai aprender tudo passo a passo, desde os ingredientes, utensílios básicos, e claro, a montagem dos sushis mais famosos: nigiri, uramaki, hossomaki, temaki e muito mais.</p>
     </div>
+
   </section>
 
 
-  <!-- TABELA -->
+  <!-- ============================================================
+       TABELA COMPARATIVA — CURSO VS YOUTUBE
+       DESTACA AS VANTAGENS DO CURSO EM RELAÇÃO AO CONTEÚDO GRATUITO
+  ============================================================ -->
   <section class="comparacao" aria-label="Comparação entre o curso e o YouTube">
-    <h2 class="titulo-energia">Tentar sozinho?!</h2>
+
+    <div class="vantagens-intro" style="margin-bottom: 30px;">
+      <span class="vantagens-badge">Tentar sozinho?!</span>
+      <h2>Será que o YouTube resolve?</h2>
+    </div>
 
     <table>
       <thead>
@@ -122,14 +122,78 @@
         <tr><td>Economia real com delivery</td><td aria-label="Sim">✔</td><td aria-label="Não">✘</td></tr>
         <tr><td>Materiais complementares</td><td aria-label="Sim">✔</td><td aria-label="Não">✘</td></tr>
         <tr><td>Certificado de conclusão</td><td aria-label="Sim">✔</td><td aria-label="Não">✘</td></tr>
-        <tr><td>Grupo no Telegram (para dúvidas)</td><td aria-label="Sim">✔</td><td aria-label="Não">✘</td></tr>
+        <tr><td>Nosso contato (para dúvidas)</td><td aria-label="Sim">✔</td><td aria-label="Não">✘</td></tr>
       </tbody>
     </table>
+
   </section>
 
 
-  <!-- DEPOIMENTOS -->
+  <!-- ============================================================
+       VANTAGENS — POR QUE FAZER ESTE CURSO
+       LISTA COM ÍCONES MOSTRANDO OS PRINCIPAIS DIFERENCIAIS
+  ============================================================ -->
+  <section class="vantagens" aria-label="Vantagens do curso">
+
+    <div class="vantagens-intro">
+      <span class="vantagens-badge">Por que este curso?</span>
+      <h2>Tudo que você vai <em>ganhar</em> com ele.</h2>
+    </div>
+
+    <div class="vantagens-lista">
+
+      <div class="vantagem-row">
+        <span class="v-icon">🎯</span>
+        <div class="v-texto">
+          <strong>Sem experiência necessária</strong>
+          <p>Qualquer pessoa aprende. Do zero, no seu ritmo, sem complicação.</p>
+        </div>
+      </div>
+
+      <div class="vantagem-row">
+        <span class="v-icon">💰</span>
+        <div class="v-texto">
+          <strong>Economize de verdade</strong>
+          <p>Prepare sushi em casa gastando muito menos do que pagaria em delivery.</p>
+        </div>
+      </div>
+
+      <div class="vantagem-row">
+        <span class="v-icon">🍣</span>
+        <div class="v-texto">
+          <strong>Habilidade real na cozinha</strong>
+          <p>Nigiri, uramaki, temaki e muito mais. Você vai saber fazer tudo.</p>
+        </div>
+      </div>
+
+      <div class="vantagem-row">
+        <span class="v-icon">🏆</span>
+        <div class="v-texto">
+          <strong>Confiança para criar</strong>
+          <p>Monte seus próprios combinados e surpreenda amigos e família.</p>
+        </div>
+      </div>
+
+      <div class="vantagem-row">
+        <span class="v-icon">❤️</span>
+        <div class="v-texto">
+          <strong>Momentos que ficam</strong>
+          <p>Transforme o aprendizado em experiências únicas com quem você ama.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       DEPOIMENTOS — AVALIAÇÕES DE ALUNOS
+       TRÊS CARDS COM COMENTÁRIOS E ESTRELAS DE AVALIAÇÃO
+  ============================================================ -->
   <section class="depoimentos" aria-label="Depoimentos de alunos">
+
+    <!-- TÍTULO OCULTO VISUALMENTE MAS ACESSÍVEL PARA LEITORES DE TELA -->
     <h2 class="sr-only">Depoimentos de alunos</h2>
 
     <div class="depo-grid">
@@ -153,28 +217,110 @@
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- GARANTIA -->
+  <!-- ============================================================
+       GARANTIA — FAIXA DE REEMBOLSO DE 7 DIAS
+       GANHA ANIMAÇÃO DE BALANÇO AO PASSAR O MOUSE
+  ============================================================ -->
   <section class="garantia" aria-label="Garantia de reembolso">
     <h2>Garantia de 7 dias!</h2>
     <p>Se você não gostar do curso, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
   </section>
 
 
-  <!-- CTA FINAL -->
-  <section class="cta-final" aria-label="Chamada para ação">
-    <h2>Fazer seu próprio sushi está a 13 passos de você!</h2>
-    <a href="https://go.hotmart.com/U103022625P" class="cta cta-final-btn" target="_blank" rel="noopener noreferrer">Quero aprender agora!</a>
+  <!-- ============================================================
+       PREÇO + CTA FINAL — CARD DE OFERTA COM BOTÃO DE COMPRA
+       ÂNCORA #CTA-FINAL É O DESTINO DO BOTÃO DO HERO
+       LINK DE COMPRA APONTA PARA A HOTMART
+  ============================================================ -->
+  <section class="preco" id="cta-final" aria-label="Oferta do curso">
+    <div class="preco-card">
+
+      <!-- LOGO OU IMAGEM DE CAPA DO CURSO -->
+      <div class="preco-titulo">
+        <img src="./FOTOS/capa.jpg" alt="13 Passos para o Sushi" class="preco-logo">
+      </div>
+
+      <!-- LISTA DE ITENS INCLUÍDOS NO CURSO -->
+      <ul class="preco-lista">
+        <li>+ de 13 videoaulas práticas em FHD</li>
+        <li>+ Técnicas usadas por profissionais</li>
+        <li>+ Ebook com receitas e dicas</li>
+        <li>+ Menu com fotos para te guiar</li>
+        <li>+ Suporte para dúvidas</li>
+        <li>+ Certificado de conclusão</li>
+      </ul>
+
+      <!-- PREÇO — PARCELAS E VALOR À VISTA -->
+      <div class="preco-valor">
+        <p class="preco-parcelas">3x de <strong>R$ 39,22</strong></p>
+        <p class="preco-vista">ou R$ 109,90 à vista</p>
+      </div>
+
+      <!-- BOTÃO PRINCIPAL DE COMPRA -->
+      <a href="https://pay.hotmart.com/U103022625P?off=tn1f5y5i" class="cta preco-btn" target="_blank" rel="noopener noreferrer">
+        GARANTIR MINHA VAGA
+      </a>
+
+      <!-- SELOS DE SEGURANÇA -->
+      <div class="preco-selos">
+        <div class="selo">
+          <span class="selo-icone">🔒</span>
+          <span>Compra<br><strong>Segura</strong></span>
+        </div>
+        <div class="selo">
+          <span class="selo-icone">⭐</span>
+          <span>Satisfação<br><strong>Garantida</strong></span>
+        </div>
+        <div class="selo">
+          <span class="selo-icone">🛡️</span>
+          <span>Privacidade<br><strong>Protegida</strong></span>
+        </div>
+      </div>
+
+      <!-- LINK DE DÚVIDAS VIA WHATSAPP -->
+      <a href="https://wa.me/5551998922465" class="preco-duvidas" target="_blank" rel="noopener noreferrer">
+        💬 Dúvidas? Fale comigo no WhatsApp!
+      </a>
+
+    </div>
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- ============================================================
+       FOOTER — RODAPÉ COM COPYRIGHT E AVISO DA HOTMART
+  ============================================================ -->
   <footer class="footer">
     <p>© 2025 <strong class="footer-nome">13 Passos para o Sushi</strong>. Todos os direitos reservados.</p>
     <p class="footer-hotmart">Este produto é vendido pela plataforma <a href="https://www.hotmart.com" target="_blank" rel="noopener noreferrer">Hotmart</a>. Ao realizar a compra, você concorda com os <a href="https://www.hotmart.com/legal/pt-BR/terms-of-purchase" target="_blank" rel="noopener noreferrer">Termos de Uso da Hotmart</a>.</p>
   </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT — CONTROLES DO CARROSSEL DE BENEFÍCIOS
+       AS SETAS ESQUERDA E DIREITA ROLAM O CARROSSEL SUAVEMENTE
+  ============================================================ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.querySelector(".carousel");
+      const btnLeft  = document.querySelector(".arrow.left");
+      const btnRight = document.querySelector(".arrow.right");
+
+      if (!carousel || !btnLeft || !btnRight) return;
+
+      btnLeft.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+      });
+
+      btnRight.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+      });
+    });
+  </script>
+
 
 </body>
 </html>
